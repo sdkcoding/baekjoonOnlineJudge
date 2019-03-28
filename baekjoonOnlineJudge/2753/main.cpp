@@ -1,5 +1,4 @@
 #include <iostream>
-#include <math.h>
 
 using namespace std;
 
@@ -9,15 +8,15 @@ int main() {
 	ios_base::sync_with_stdio(false);
 
 	int a;
-	int i = 2;
+	int result;
 	cin >> a;
-
-	while (a > 1) {
-		if (a % i == 0) {
-			cout << i << '\n';
-			a /= i;
-		}
-		if (a % i != 0) i++;
+	if (((a % 4 == 0) && (a % 100 != 0)) || (a % 400 == 0)) {
+		result = 1;
 	}
+	else {
+		result = 0;
+	}
+	cout << result << '\n';
+
 	return 0;
 }

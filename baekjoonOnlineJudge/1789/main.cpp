@@ -1,5 +1,4 @@
 #include <iostream>
-#include <math.h>
 
 using namespace std;
 
@@ -8,16 +7,17 @@ int main() {
 	cout.tie(NULL);
 	ios_base::sync_with_stdio(false);
 
-	int a;
-	int i = 2;
+	unsigned int a;
+
+	unsigned int i = 1;
 	cin >> a;
 
-	while (a > 1) {
-		if (a % i == 0) {
-			cout << i << '\n';
-			a /= i;
-		}
-		if (a % i != 0) i++;
+	while (a >= i) {
+		a -= i;
+		i++;
 	}
+
+	cout << i - 1 << '\n';
+
 	return 0;
 }
