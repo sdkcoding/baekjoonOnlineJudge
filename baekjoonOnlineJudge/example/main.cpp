@@ -9,16 +9,20 @@ int main()
 	cin.tie(NULL);
 	cout.tie(NULL);
 	ios_base::sync_with_stdio(false);
+	
+	string dish;
+	int i, length, height = 10;
 
-	string a;
-	string b;
-	char c;
+	cin >> dish;
 
-	cin >> a;
-	cin >> c;
-	cin >> b;
+	length = dish.size();
 
-	cout << "The size of str is " << a << " " << c << " " << b << " bytes.\n";
-	cout << a.length() - b.length() << '\n';
+	for (i = 1; i < length; i++) {
+		if (dish[i - 1] == dish[i])
+			height += 5;
+		else if (dish[i - 1] != dish[i])
+			height += 10;
+	}
+	cout << height << "-" << '\n';
 	return 0;
 }
