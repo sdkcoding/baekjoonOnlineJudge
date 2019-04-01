@@ -1,5 +1,3 @@
-// string::size
-#include <iostream>
 #include <iostream>
 #include <math.h>
 
@@ -16,28 +14,42 @@ void prepareToCheckSquare() {
 
 inline bool IsSquare(unsigned int num) {
 	if (bBase[(int)(num & (BASENUM - 1))]) {
-		cout << sqrt((double)num) << '\n';
-		cout << sqrt((double)num) + 0.5 << '\n';
 		unsigned int temp = (unsigned int)(sqrt((double)num) + 0.5);
 		return (temp*temp == num);
 	}
 	else return false;
 }
 
-int main()
-{
+int main() {
 	cin.tie(NULL);
 	cout.tie(NULL);
 	ios_base::sync_with_stdio(false);
-	int a, b;
-	cin >> a >> b;
+
 	prepareToCheckSquare();
+
+	unsigned int a, b;
+	int sum = 0;
+	bool i = true;
+	int small = 0;
+
+	cin >> a >> b;
 	while (a <= b) {
 		if (IsSquare(a)) {
-			cout << a << '\n';
+			sum += a;
+			if (i) {
+				small = a;
+				i = false;
+			}
 		}
 		a++;
 	}
-	
+	if (sum == 0) {
+		cout << -1 << '\n';
+	}
+	else {
+		cout << sum << '\n';
+		cout << small << '\n';
+	}
+
 	return 0;
 }
