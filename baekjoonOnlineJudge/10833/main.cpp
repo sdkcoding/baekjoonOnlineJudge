@@ -8,16 +8,20 @@ int main() {
 	ios_base::sync_with_stdio(false);
 
 	int n;
-
 	cin >> n;
-	
-	long long int sum = 0;
-	long long int a = 0, b = 1;
-	for (int i = 0; i < n ; i++) {
-		a = b;
-		b = sum;
-		sum = a + b;
+
+	int a, b;
+	int sum = 0;
+	for (int i = 0; i < n; i++) {
+		cin >> a >> b;
+		if (a > b) {
+			sum += b;
+		}
+		else {
+			sum += (b%a);
+		}
 	}
 	cout << sum << '\n';
+
 	return 0;
 }
