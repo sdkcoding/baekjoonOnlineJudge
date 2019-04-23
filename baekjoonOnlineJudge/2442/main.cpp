@@ -1,3 +1,6 @@
+#define EXP01	0;
+#define EXP02	1;
+#if EXP01
 #include <iostream>
 
 using namespace std;
@@ -22,3 +25,21 @@ int main() {
 
 	return 0;
 }
+#endif
+#if EXP02
+#include <stdio.h>
+int main()
+{
+	int n, i, j, k = 1;
+	scanf("%d", &n);
+	for (i = 0; i < n; i++)
+	{
+		for (j = 1; j < n - k / 2; j++)
+			printf(" ");
+		for (j = 0; j < k; j++)
+			printf("*");
+		printf("\n");
+		k += 2;
+	};
+}
+#endif
