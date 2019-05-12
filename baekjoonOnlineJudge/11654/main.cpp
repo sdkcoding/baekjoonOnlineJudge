@@ -5,9 +5,9 @@ using namespace std;
 
 int main()
 {
-	char num[100];
-	scanf("%s", num);
-	printf("%s", num);
+	char ch;
+	scanf("%c", &ch);
+	printf("%d\n", ch);
 	
 
 	return 0;
