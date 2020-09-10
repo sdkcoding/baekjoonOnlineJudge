@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.421
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29503.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1000", "1000\1000.vcxproj", "{35A5FE9C-505C-42D8-B9CD-D5373235C8AE}"
 EndProject
@@ -280,6 +280,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "11720", "11720\11720.vcxproj", "{F60410B9-2BD2-416C-BE01-4F2402BFB7B5}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "11721", "11721\11721.vcxproj", "{151F164B-1134-4597-B84A-3407C56A2E8F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "11650(좌표 정렬하기)", "11650(좌표 정렬하기)\11650(좌표 정렬하기).vcxproj", "{A5D77307-E8F3-4149-A7B1-A506E86FD2BF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -1401,6 +1403,14 @@ Global
 		{151F164B-1134-4597-B84A-3407C56A2E8F}.Release|x64.Build.0 = Release|x64
 		{151F164B-1134-4597-B84A-3407C56A2E8F}.Release|x86.ActiveCfg = Release|Win32
 		{151F164B-1134-4597-B84A-3407C56A2E8F}.Release|x86.Build.0 = Release|Win32
+		{A5D77307-E8F3-4149-A7B1-A506E86FD2BF}.Debug|x64.ActiveCfg = Debug|x64
+		{A5D77307-E8F3-4149-A7B1-A506E86FD2BF}.Debug|x64.Build.0 = Debug|x64
+		{A5D77307-E8F3-4149-A7B1-A506E86FD2BF}.Debug|x86.ActiveCfg = Debug|Win32
+		{A5D77307-E8F3-4149-A7B1-A506E86FD2BF}.Debug|x86.Build.0 = Debug|Win32
+		{A5D77307-E8F3-4149-A7B1-A506E86FD2BF}.Release|x64.ActiveCfg = Release|x64
+		{A5D77307-E8F3-4149-A7B1-A506E86FD2BF}.Release|x64.Build.0 = Release|x64
+		{A5D77307-E8F3-4149-A7B1-A506E86FD2BF}.Release|x86.ActiveCfg = Release|Win32
+		{A5D77307-E8F3-4149-A7B1-A506E86FD2BF}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
